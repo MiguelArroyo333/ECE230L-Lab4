@@ -27,4 +27,5 @@ This is due to the way the Kmap is designed, it really is more like a map of the
 Sum of Products comes from how Minterms are designed, where it is a bunch of ORs of ANDs like (A.B) + (A.~C).
 Product of Sums is the opposite, made from Max Terms, a bunch of ANDs of ORs, like (~A+~C) * (A+B) 
 ### Open the test.v file – how are we able to check that the signals match using XOR?
-
+XOR outputs true if and only the two inputs are different. XOR can be used because an output of 0 would mean they are the same.
+The test checks if the output is NOT 0 which means false.
